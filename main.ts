@@ -172,4 +172,3 @@ function compareNumbers(arr:any[]):any{
     return sortArr
 }
 console.log(compareNumbers([8,"77",84,"85",5,"ast",true]))
-
