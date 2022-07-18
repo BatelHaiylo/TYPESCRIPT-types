@@ -85,10 +85,9 @@ function evenMassage(numArray:number[]){
 // console.log(evenMassage([1,2,23,46,5]))
 
 function getDate(str : string) :Date{
-    let userDate : Date = new Date(str)
-        return userDate
+    return new Date(str)
 }
-// console.log(getDate("20-08-1997"))
+// console.log(getDate("08-20-1997"))
 
 function getTextNumTimes(text : string, num : number):void{
     for(let i=0; i<num+1; i++){
@@ -148,23 +147,23 @@ function cheackOrder(numArr:number[], text:string) : number[] {
 }
 // console.log(cheackOrder([8,77,84,85,5],"text"))
 
+let strArr:string[] = [] ;
+let bolArr:boolean[] = [] ;
+let numsArr:number[] = [] ;
+let objArr:object[] = [] ;
 function compareNumbers(arr:any[]):any{
     arr.forEach(item =>{
         switch(typeof(item)){
             case "string":
-            let strArr:string[] = [] ;
             strArr.push(item)
             break;
             case "boolean":
-            let bolArr:boolean[] = [] ;
             bolArr.push(item)
             break;
             case "number":
-            let numsArr:number[] = [] ;
             numsArr.push(item)
             break;
             case "object":
-            let objArr:object[] = [] ;
             objArr.push(item)
             break;
         }
